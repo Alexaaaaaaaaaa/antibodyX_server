@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" autoUpload="Always" serverName="TencentCloudServer (ae9bd5ed-c7d2-416f-b66b-6522aa22d3a5)" remoteFilesAllowedToDisappearOnAutoupload="false">
+    <serverData>
+      <paths name="MakeFileBuild (4b2fd3d7-6c50-4eae-9ba7-f388157ecfb1)">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/tmp/tmp.g30dAIL402" local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="Remote Host (871a25c2-7da8-4c60-adc5-0dd462be7bcd)">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/tmp/tmp.KR4AU4Fc2m" local="$PROJECT_DIR$" />
+          </mappings>
+          <excludedPaths>
+            <excludedPath local="true" path="$PROJECT_DIR$/cmake-build-debug-tencentcloudserver" />
+            <excludedPath local="true" path="$PROJECT_DIR$/build" />
+            <excludedPath local="true" path="$PROJECT_DIR$/cmake-build-debug" />
+            <excludedPath local="true" path="$PROJECT_DIR$/build" />
+            <excludedPath local="true" path="$PROJECT_DIR$/cmake-build-debug-tencentcloudserver" />
+          </excludedPaths>
+        </serverdata>
+      </paths>
+      <paths name="TencentCloudServer (ae9bd5ed-c7d2-416f-b66b-6522aa22d3a5)">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/tmp/tmp.q13xWdQEtb" local="$PROJECT_DIR$" />
+          </mappings>
+          <excludedPaths>
+            <excludedPath local="true" path="$PROJECT_DIR$/cmake-build-debug-tencentcloudserver" />
+            <excludedPath local="true" path="$PROJECT_DIR$/build" />
+            <excludedPath local="true" path="$PROJECT_DIR$/build" />
+            <excludedPath local="true" path="$PROJECT_DIR$/cmake-build-debug-tencentcloudserver" />
+          </excludedPaths>
+        </serverdata>
+      </paths>
+    </serverData>
+    <option name="myAutoUpload" value="ALWAYS" />
+  </component>
+</project>

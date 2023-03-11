@@ -1,0 +1,389 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0%;
+}
+p{
+    color: red;
+}
+.main-title{
+    font-family: 新宋体 ;
+    font-size: 90px;
+    color: #c22929;
+    align-items: flex-start;
+}
+.main-title-english{
+    letter-spacing: 15px;
+    font-family: "Times New Roman" ;
+    font-size: 30px;
+    align-items: flex-start;
+    color: #c22929;
+}
+.sub-title{
+    font-family: 华文仿宋;
+    font-size: 35px;
+    color: black;
+}
+.navbar{
+    display: flex;
+    /* justify-content: space-evenly; */
+    /* justify-content: space-around; */
+    /* justify-content: space-between; */
+    align-items: center;
+    padding: 20px;
+    /* margin: 10px 100px; */
+}
+.nav-list{
+    flex-grow: 1;  /* To make content to occupy full content Space */
+    text-align: right;
+}
+.nav-list ul{
+    display: inline-block;
+    /* display: flex; */
+    list-style-type: none;
+}
+.nav-list ul li{
+    display: inline-block;/* This is done to make horizontal Navbar */
+    padding: 10px;
+}
+.nav-list ul a{
+    text-decoration: none;
+    color: #555;
+}
+.container{
+    max-width: 1500px;
+    margin: auto;
+    /* background-color: white; */
+    padding: 0 25px;
+    /* background-color: radial-gradient(#fff,#ffd6d6); */
+
+}
+header{
+    background: radial-gradient(#fff,gray);
+    height: 100vh;
+}
+.logo{
+    width: 80px;
+    height: 100%;
+    
+    /* height: 125px; */
+}
+.logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.col-50{
+    flex-basis: 50%;
+    min-width: 300px;
+    
+}
+.col-50 h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+.col-50 img{
+    max-width: 100%;
+    padding: 100px 0;
+}
+.description{
+    font-size: 25px;
+    font-family: 楷体;
+    color: black;
+}
+.btn{
+
+    border: none;
+    /* display: inline-block; */
+    background: gray;
+    cursor: pointer;
+    /* border: ; */
+    padding: 10px 30px;
+    background-color: #e3e3e3;
+    color: #fff;
+    border-radius: 100px;
+    margin: 80px 0;
+    transition: background 0.1s;
+}
+.btn a{
+    text-decoration: none;
+    color: black;
+}
+.btn:hover{
+    background-color: #c6c6c6;
+}
+
+
+
+/* Feature Categorie Part */
+
+.categories{
+    margin: 70px 0;
+}
+
+.col-3{
+    flex-basis:30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+}
+.col-3 img{
+    max-width: 100%;
+    /* height: 100%; */
+}
+.small-container{
+
+    max-width: 1060px;
+    margin: auto;
+    padding: 0 25px;
+}
+
+
+
+/* Fetured Product */
+
+.col-4{
+    flex-basis: 25%;
+    padding: 10px;
+    min-width:200px;
+    margin-bottom: 50px;
+    transition: transform 0.5s ease;
+}
+.col-4 img{
+    max-width: 100%;
+}
+.rating{
+    margin: 5px 0;
+}
+.rating .fa-solid{
+color: #ff523b;
+
+}
+.heading{
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    color: #555;
+    line-height: 60px;
+    font-weight: bolder;
+}
+.heading::after{
+    content: '';
+    background-color: #ff523b;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+}
+h4{
+    color: #555;
+    font-weight: normal;
+}
+.col-4 p{
+    font-size: 14px;
+}
+.col-4:hover{
+    transform: translateY(-5px);
+}
+
+/* Latest Product */
+
+/* Same is Above No changes */
+
+
+/* Exclusive Product */
+.Exclusive-Product{
+        background: radial-gradient(#fff,#ffd6d6);
+        margin-top: 100px;
+        padding: 30px 0;
+    
+}
+small{
+    display: block;
+    color: #555;
+}
+.Exclusive-Product img{
+    padding: 50px;
+}
+
+
+/* Testo Nomial Section */
+
+.testo-Nomial{
+    /* margin: 100px 0; */
+    padding-top: 100px;
+}
+.card{
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1) ;
+    font-weight: normal;
+    transition:transform 0.5s ease;
+    cursor: pointer;
+}
+.card p{
+    font-size: 12px;
+    margin: 12px 0;
+    color: #777;
+}
+.card:hover{
+    transform: translateY(-50px);
+}
+.image-test img{
+    border-radius: 50%;
+    width: 50px;
+
+}
+.fa-quote-left{
+    font-size: 34px;
+    color: #ff523b;
+    margin: 10px 0;
+}
+.card .rating{
+    margin: 15px 0;
+}
+
+/* Brand Part */
+
+.Brand{
+    margin: 80px auto;
+}
+.col-5{
+    /* flex-grow: 1; */
+    padding: 10px;
+    width: 160px;
+}
+.col-5 img{
+    width: 100%;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+.col-5 img:hover{
+    filter: grayscale(0%);
+
+}
+
+/* Footer */
+
+.footer{
+    background:radial-gradient(#fff,#ffd6d6);
+    padding: 60px 25px;
+    color: rgb(0, 0, 0);
+    position: relative;
+    /* -webkit-mask-image: url(images/85828_color-png.png  ); */
+    /* mask-image: url(https://mdn.mozillademos.org/files/12676/star.svg); */
+}
+
+
+.image-gallery img{
+    width: 50%;
+    
+}
+.footer-col-1{
+    flex-basis: 30%;
+    padding:0 20px;
+}
+.footer-col-2{
+    flex-basis: 30%;
+    padding:0 20px;
+    text-align: center;
+}
+
+
+.footer-col-3,.footer-col-4{
+    padding:0 20px;
+    flex-basis: 20%;
+    text-align: center;
+}
+.footer-col-3 a,.footer-col-4 a{
+    text-decoration: none;
+    color: #555;
+    display: block;
+
+}
+
+
+.copyright{
+    margin-top: 30px;
+    text-align: center;
+}
+.copyright p{
+    margin-top:10px ;
+}
+
+/* Menu icon */
+
+.menu-icon{
+    cursor: pointer;
+    width: 28px;
+    z-index: 100;
+}
+
+
+@media screen and (max-width:600px) {
+    .nav-list{
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        /* left: 0; */
+        width: 0%;
+        text-align: center;
+        background-color:rgba(0, 0, 0, 0.6)
+    }
+    .nav-list ul li{
+        position: relative;
+        top: 300px;
+        font-size: 30px;
+        text-align: center;
+        display: block;
+        color: white;
+    }
+    .nav-list ul li a{
+        color: white;
+    }
+
+    .navbar{
+        justify-content: space-between;
+    }
+    .menu-icon{
+        position: fixed;
+        margin: 20px;
+
+        right: 0;
+        top: 20px;
+
+    }
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

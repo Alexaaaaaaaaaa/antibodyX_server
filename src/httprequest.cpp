@@ -77,8 +77,12 @@ void HttpRequest::ParsePath_() {
 }
 
 bool HttpRequest::ParseRequestLine_(const string &line) {
-    regex patten("^([^ ]*) ([^ ]*) HTTP/([^ ]*)$");
+    cout<<"parse result:";
+    cout<<line<<endl;
+    regex patten("([^ ]*) ([^ ]*) HTTP/([^ ]*)$");
+
     smatch subMatch;
+
     if (regex_match(line, subMatch, patten)) {
         method_ = subMatch[1];
         path_ = subMatch[2];
@@ -86,6 +90,7 @@ bool HttpRequest::ParseRequestLine_(const string &line) {
         state_ = HEADERS;
         return true;
     }
+    cout<<"parsing over"<<endl;
     LOG_ERROR("RequestLine Error");
     return false;
 }
@@ -178,6 +183,7 @@ void HttpRequest::ParseFromUrlencoded_() {
         post_[key] = value;
     }
 }
+
 
 bool HttpRequest::UserVerify(const string &name, const string &pwd, bool isLogin) {
     if (name == "" || pwd == "") { return false; }

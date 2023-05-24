@@ -35,13 +35,17 @@ Mysql的最新安装密钥GBG【用于解决报错：GPG key retrieval failed: [
 4、systemctl start mysqld
 
 5、新安装的mysql默认无密码或存在随机密码，用以下方式设置root密码：
+
 无密码登录方式：
 /data/software/mysql8/bin/mysql -u root --skip-password
+
 有密码登录方式（初始的随机密码在/data/mysql8_data/mysql/mysql.log下）
 mysql -u root -p
 password:随机密码
+
 修改密码：
 ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '123456';
+
 刷新权限：
 FLUSH PRIVILEGES;
 

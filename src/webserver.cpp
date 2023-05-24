@@ -18,7 +18,10 @@ WebServer::WebServer(
     cout<<"Server begin to construct itself!"<<endl;
     //获取当前工作目录给srcDir_，用于映射给httpResponse处理
     srcDir_ = getcwd(nullptr, 256);
-    cout << "Current working directory:" << srcDir_ << endl;
+    string temp(srcDir_);
+    temp=temp.substr(0,temp.find_last_of('/'));
+    memcpy(srcDir_, temp.c_str(), temp.size() + 1);
+    cout << "Web resources dir:" << srcDir_ << endl;
     assert(srcDir_);
     //将request的url与本地html资源映射起来。
     strncat(srcDir_, "/web_resources2/", 20);
